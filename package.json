@@ -1,0 +1,13 @@
+{
+  "name": "mern-task-manager",
+  "private": true,
+  "workspaces": [
+    "front",
+    "back"
+  ],
+  "scripts": {
+    "dev:back": "npm --workspace back run dev",
+    "dev:front": "npm --workspace front run dev",
+    "dev": "npm run dev:back && npm run dev:front"
+  }
+}
